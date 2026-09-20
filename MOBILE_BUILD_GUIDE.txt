@@ -1,0 +1,15 @@
+Pawan Fast Food - Mobile Build Guide
+
+1. Create a GitHub account and a new repository.
+2. Upload all files/folders from this project into the repository (keep .github/workflows/build-aab.yml).
+3. Open the repository's Actions tab.
+4. Select "Build Android AAB".
+5. Press "Run workflow" (or push to main to trigger it).
+6. When the workflow finishes, open the successful run.
+7. Download the "PawanFastFood-AAB" artifact.
+8. For Google Play production, use a properly signed release bundle and configure Play App Signing as required by Google Play.
+
+Important:
+- This workflow creates an UNSIGNED release AAB. It is intended to demonstrate the cloud build step.
+- For a Play Store release, you must sign the app with your own secure upload/release key or configure Play App Signing.
+- Never put private signing keys or passwords directly into a public repository.
